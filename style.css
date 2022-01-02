@@ -16,7 +16,15 @@ justify-content: center;
 flex-direction: column;
 align-items: center;
 width: 100%;
-background-color: lightgray;
+
+
+background-image: linear-gradient(to bottom, rgba(247, 247, 254, 0.5),
+ rgba(247, 247, 254, 0.5)
+),url(images/bg-bottom.svg),url(images/bg-top.svg);
+background-repeat: no-repeat;
+background-position: top right, bottom left;
+
+
 
 }
 .price{
@@ -55,7 +63,8 @@ background-color: lightgray;
     
     width: 1050px;
     margin-top: 60px;
-    background-color: lightgray;
+    margin-bottom: 101px;
+    background-color: rgba(247, 247, 254, );
 
 }
 .basic{
@@ -84,6 +93,10 @@ background-color: lightgray;
     ;
     color: white;
 }
+
+.professional .category{
+    padding-top: 55px;
+}
 .master{
     height: 453px;
     width: 350px; 
@@ -100,7 +113,8 @@ background-color: lightgray;
     line-height: 28px;
     letter-spacing: 0px;
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 24px;
+    padding-top: 31px;
 
 }
 .dollar{
@@ -111,7 +125,7 @@ background-color: lightgray;
     line-height: 71px;
     letter-spacing: -2.1600000858306885px;
     text-align: left;
-    margin-bottom: 45px;
+    margin-bottom: 32px;
 }
 .user{
     font-family: 'Karla', sans-serif;
@@ -140,19 +154,30 @@ background-color: lightgray;
     text-align: center;
     height: 44px;
     width: 288px;
-
+   
 
      
 }
 @media(max-width:600px ){
+    body{
+        display: flex;
+        justify-content: center;
+        
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        }
     .clasification{
         flex-direction: column;
+        width: 350px;
+        margin-bottom: 25px;
     }
     .professional{
         margin-top: 25px;
     }
     .master{
        margin-top: 25px;
+       margin-bottom: 71px;
     }
 }
 
